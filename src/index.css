@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.shirt-box {
+  height: 700px !important;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.image {
+  height: 600px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.shirt-box {
+  position: relative;
+}
+
+.shirt_text {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  text-align: center;
+  z-index: 19;
+  cursor: move;
+}
+
+.shirt_text_1 {
+  position: absolute;
+  top: 25%;
+  left: 23%;
+  text-align: center;
+  z-index: 19;
+  cursor: move;
+}
+
+.shirt_text>p {
+  font-size: 30px;
+  color: gray;
+}
+
+.home {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*  */
+
+
+#draggable,
+#draggable1 {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100px;
+  font-size: 2rem;
+}
+
+.no-select,
+.no-select1 {
+  user-select: none;
 }
